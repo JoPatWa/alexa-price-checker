@@ -1,0 +1,150 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "price checker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "lowestPrice",
+                    "samples": [
+                        "lowest price",
+                        "lowest price for {itemType}",
+                        "lowest price for {itemType} and itemSize {itemSize}",
+                        "lowest price for {itemType} and itemSize {itemSize} in color {itemColor}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "itemType",
+                            "type": "LIST_OF_DIFFERENT_ITEM_TYPES"
+                        },
+                        {
+                            "name": "itemSize",
+                            "type": "LIST_OF_DIFFERENT_ITEM_SIZES"
+                        },
+                        {
+                            "name": "itemColor",
+                            "type": "LIST_OF_DIFFERENT_ITEM_COLORS"
+                        }
+                    ]
+                },
+                {
+                    "name": "highestPrice",
+                    "samples": [
+                        "highest price",
+                        "highest price for {itemType}",
+                        "highest price for {itemType} and itemSize {itemSize}",
+                        "highest price for {itemType} and itemSize {itemSize} in color {itemColor}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "itemType",
+                            "type": "LIST_OF_DIFFERENT_ITEM_TYPES"
+                        },
+                        {
+                            "name": "itemSize",
+                            "type": "LIST_OF_DIFFERENT_ITEM_SIZES"
+                        },
+                        {
+                            "name": "itemColor",
+                            "type": "LIST_OF_DIFFERENT_ITEM_COLORS"
+                        }
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_DIFFERENT_ITEM_TYPES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "shirt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jeans"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "video game"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hdmi cable"
+                            }
+                        }
+                        
+                    ]
+                },
+                {
+                    "name": "LIST_OF_DIFFERENT_ITEM_SIZES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "small"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "large"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "extra large"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_DIFFERENT_ITEM_COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "white"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
